@@ -1,13 +1,14 @@
 import './App.css'
-import HomePage from './pages/Home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SearchExtension from '../src/components/searchExtension'
+
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-      </Routes>
-    </Router>
+    <>
+      <div className="w-auto h-auto block">
+        <SearchExtension/>
+      </div>
+    </>
   )
 }
 
